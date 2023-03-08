@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Спринт-16</title>
+</head>
+<body>
+  <nav class="py-6 px-6 text-center bg-yellow-500">
+    <a href="/" class="text-black text-xl"><span class="text-red-600">У</span>ра, у меня получилось!</a>
+  </nav>
+    <div class="px-6 py-6 flex justify-between text-center text-xl">
+            <div class="px-4 py-4 bg-yellow-500 text-black rounded-xl">
+            <h2><span class="text-red-600">О</span>сновы Python</h2>
+            {% for i in python_basics %}
+                <p
+                    class="mt-4 py-4 px-2 w-full text-left
+                        {% cycle 'bg-white text-slate-800 rounded-xl' 'bg-neutral-100 text-slate-900 rounded-xl' %}">
+                        {{i}}</p>
+            {% endfor %}
+
+            </div>
+            <div class="px-4 py-4 bg-yellow-500 text-black rounded-xl">
+            <h2><span class="text-red-600">D</span>jango Backend</h2>
+            {% for i in django_backend %}
+                <p
+                    class="mt-4 py-4 px-2 w-full text-left
+                        {% cycle 'bg-white text-slate-800 rounded-xl' 'bg-neutral-100 text-slate-900 rounded-xl' %}">
+                        {{i}}</p>
+            {% endfor %}
+
+            </div>
+            <div class="px-4 py-4 bg-yellow-500 text-black rounded-xl">
+            <h2><span class="text-red-600">A</span>PI - интерфейс</h2>
+            {% for i in api %}
+                <p
+                    class="mt-4 py-4 px-2 w-full text-left
+                        {% cycle 'bg-white text-slate-800 rounded-xl' 'bg-neutral-100 text-slate-900 rounded-xl' %}">
+                        {{i}}</p>
+            {% endfor %}
+            </div>
+            <div class="px-4 py-4 bg-yellow-500 text-black rounded-xl">
+            <h2><span class="text-red-600">A</span>lgorithms</h2>
+            {% for i in algos %}
+                <p
+                    class="mt-4 py-4 px-2 w-full text-left
+                        {% cycle 'bg-white text-slate-800 rounded-xl' 'bg-neutral-100 text-slate-900 rounded-xl' %}">
+                        {{i}}</p>
+            {% endfor %}
+            </div>
+            <div class="px-4 py-4 bg-yellow-500 text-black rounded-xl">
+            <h2><span class="text-red-600">V</span>irtual Machines</h2>
+            {% for i in vm %}
+                <p
+                    class="mt-4 py-4 px-2 w-full text-left
+                        {% cycle 'bg-white text-slate-800 rounded-xl' 'bg-neutral-100 text-slate-900 rounded-xl' %}">
+                        {{i}}</p>
+            {% endfor %}
+            </div>
+    </div>
+    </div>
+
+</body>
