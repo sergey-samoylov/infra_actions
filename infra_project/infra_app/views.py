@@ -63,6 +63,7 @@ vm = (
     "CI и CD",
 )
 
+
 def index(request):
     context = {
         'algos': algos,
