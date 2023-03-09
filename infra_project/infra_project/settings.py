@@ -1,4 +1,4 @@
-# Just to test that image deploys to DockerHub and updates on server
+# Deploys to DockerHub and updates on server - second try
 import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
